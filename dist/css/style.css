@@ -361,10 +361,18 @@
  
  @media screen and (max-width: 375px) {
      .navigation .box-navigation .box:nth-child(2) {
-         right: 30px;
+         right: 10px;
+         width: 120px;
      }
-     .navigation .box-navigation .menu-navigation.menu-active {
-         right: 30px;
+     /* .navigation .box-navigation .menu-navigation.menu-active {
+         right: 0;
+         width: 100px;
+     } */
+     .navigation .box-navigation .menu-navigation.menu-active ul li a {
+         font-size: 15px;
+     }
+     .navigation .box-navigation .menu-navigation.menu-active ul li i {
+         font-size: 15px;
      }
      header .hero h1 {
          font-size: 18px;
