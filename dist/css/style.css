@@ -416,7 +416,7 @@
      .contact .box-contact form table tr td textarea {
          padding: 15px 100px 100px 20px;
      }
-     .gotopbtn {
+     #btnScrollToTop {
          width: 15px;
          height: 15px;
          right: 10px;
@@ -424,15 +424,25 @@
      }
  }
  
- .gotopbtn {
+ #btnScrollToTop {
      position: fixed;
      width: 50px;
      height: 50px;
-     color: black;
+     /* background: #caf0f8; */
+     background: #3a86ff;
+     color: white;
      bottom: 10px;
      right: 10px;
      text-decoration: none;
      text-align: center;
      line-height: 50px;
-     font-size: 50px;
+     font-size: 40px;
+     border-radius: 50px;
+     outline: none;
+     cursor: pointer;
+     border: none;
+ }
+ 
+ #btnScrollToTop:active {
+     background: #2f5fad;
  }

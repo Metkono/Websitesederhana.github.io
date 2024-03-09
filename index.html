@@ -140,7 +140,9 @@
         </div>
     </section>
     <!-- contact -->
-
+    <button id="btnScrollToTop">
+        <i class="ri-arrow-up-line"></i>
+    </button>
     <!-- footer -->
     <footer>
         <p>&copy; 2024 by Latihan Cooding</p>
@@ -152,7 +154,29 @@
     <script>
         AOS.init();
     </script>
-    <a class="gotopbtn" href="#"><i class="ri-arrow-up-circle-line"></i></a>
+    <!-- <a class="gotopbtn" href="#"><i class="ri-arrow-up-circle-line"></i></a> -->
+    <script>
+        // const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+        // btnScrollToTop.addEventListener("click", function() {
+        //     window.scrollTo(0, 0);
+        // });
+
+        let getTombol = document.getElementById("btnScrollToTop");
+
+        window.addEventListener("scroll", function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                getTombol.style.display = "block";
+            } else {
+                getTombol.style.display = "none";
+            }
+        });
+
+        getTombol.addEventListener("click", function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        })
+    </script>
 </body>
 
 </html>
