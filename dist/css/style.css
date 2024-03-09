@@ -213,7 +213,24 @@
  
  .contact .box-contact form table tr td textarea {
      margin-top: 10px;
-     padding: 15px 100px 100px 20px;
+     padding: 15px 90px 100px 20px;
+ }
+ 
+ #tombol {
+     border-radius: 50px;
+     border: 1px solid #bde0fe;
+     background-color: #0077b6;
+     color: white;
+     font-size: 15px;
+     font-weight: bold;
+     padding: 12px 30px;
+     letter-spacing: 1px;
+     text-transform: uppercase;
+     transition: transform 80ms ease-out;
+ }
+ 
+ #tombol:hover {
+     opacity: 0, 7;
  }
  
  @media screen and (max-width: 1200px) {
